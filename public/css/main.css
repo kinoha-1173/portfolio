@@ -633,14 +633,8 @@
   .grid {
     display: grid;
   }
-  .h-12 {
-    height: calc(var(--spacing) * 12);
-  }
   .h-16 {
     height: calc(var(--spacing) * 16);
-  }
-  .h-20 {
-    height: calc(var(--spacing) * 20);
   }
   .h-48 {
     height: calc(var(--spacing) * 48);
@@ -669,13 +663,6 @@
   .gap-8 {
     gap: calc(var(--spacing) * 8);
   }
-  .space-y-8 {
-    :where(& > :not(:last-child)) {
-      --tw-space-y-reverse: 0;
-      margin-block-start: calc(calc(var(--spacing) * 8) * var(--tw-space-y-reverse));
-      margin-block-end: calc(calc(var(--spacing) * 8) * calc(1 - var(--tw-space-y-reverse)));
-    }
-  }
   .overflow-hidden {
     overflow: hidden;
   }
@@ -689,12 +676,6 @@
   .border-b {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
-  }
-  .bg-blue-600 {
-    background-color: var(--color-blue-600);
-  }
-  .bg-gray-50 {
-    background-color: var(--color-gray-50);
   }
   .bg-gray-400 {
     background-color: var(--color-gray-400);
@@ -717,16 +698,9 @@
   .pl-0 {
     padding-left: calc(var(--spacing) * 0);
   }
-  .text-center {
-    text-align: center;
-  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
-  }
-  .text-base {
-    font-size: var(--text-base);
-    line-height: var(--tw-leading, var(--text-base--line-height));
   }
   .text-sm {
     font-size: var(--text-sm);
@@ -743,12 +717,6 @@
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
-  }
-  .text-gray-200 {
-    color: var(--color-gray-200);
-  }
-  .text-gray-400 {
-    color: var(--color-gray-400);
   }
   .text-gray-500 {
     color: var(--color-gray-500);
@@ -1016,12 +984,6 @@
       }
     }
   }
-  .prose-h1\:text-2xl {
-    & :is(:where(h1):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      font-size: var(--text-2xl);
-      line-height: var(--tw-leading, var(--text-2xl--line-height));
-    }
-  }
   .prose-h1\:text-4xl {
     & :is(:where(h1):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       font-size: var(--text-4xl);
@@ -1069,29 +1031,12 @@
       line-height: var(--tw-leading, var(--text-base--line-height));
     }
   }
-  .prose-p\:text-lg {
-    & :is(:where(p):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      font-size: var(--text-lg);
-      line-height: var(--tw-leading, var(--text-lg--line-height));
-    }
-  }
-  .prose-p\:leading-normal {
-    & :is(:where(p):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      --tw-leading: var(--leading-normal);
-      line-height: var(--leading-normal);
-    }
-  }
   .prose-p\:leading-relaxed {
     & :is(:where(p):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       --tw-leading: var(--leading-relaxed);
       line-height: var(--leading-relaxed);
     }
   }
-}
-@property --tw-space-y-reverse {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
 }
 @property --tw-border-style {
   syntax: "*";
@@ -1174,7 +1119,6 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-space-y-reverse: 0;
       --tw-border-style: solid;
       --tw-font-weight: initial;
       --tw-shadow: 0 0 #0000;

@@ -4,6 +4,7 @@ title = "キノベヤ~Kino's room~"
 theme = 'portfolio'
 
 [build]
+  publish = "public"
   [build.buildStats]
     enable = true
   [[build.cachebusters]]
