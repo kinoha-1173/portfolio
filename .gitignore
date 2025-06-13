@@ -1,0 +1,23 @@
+# Hugo の出力フォルダ
+/public/
+
+# Hugo Pipes の生成キャッシュ
+/resources/_gen/
+
+# Hugo ビルドキャッシュ（v0.62+ 以降）
+/.hugo_build.lock
+/hugo_stats.json
+
+# Node.js 関連
+/node_modules/
+/package-lock.json
+
+# 環境設定ファイル（もし使っていれば） 
+/.env
+
+# macOS の不要ファイル
+.DS_Store
+
+# エディタやIDEの設定
+/.vscode/
+/.idea/
