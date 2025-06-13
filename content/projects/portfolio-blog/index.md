@@ -1,6 +1,6 @@
 +++
 date = '2025-06-13T14:53:28+09:00'
-draft: true
+draft = true
 title = 'Hugoによるブログサイト'
 thumbnail = 'thumbnail.png'
 architect = [
