@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on キノベヤ~Kino&#39;s room~</title>
+    <link>http://localhost:1313/projects/</link>
+    <description>Recent content in Projects on キノベヤ~Kino&#39;s room~</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 13 Jun 2025 15:52:36 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Processing Game</title>
+      <link>http://localhost:1313/projects/processing-game/</link>
+      <pubDate>Fri, 13 Jun 2025 15:52:36 +0900</pubDate>
+      <guid>http://localhost:1313/projects/processing-game/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Portfolio Blog</title>
+      <link>http://localhost:1313/projects/portfolio-blog/</link>
+      <pubDate>Fri, 13 Jun 2025 14:53:28 +0900</pubDate>
+      <guid>http://localhost:1313/projects/portfolio-blog/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

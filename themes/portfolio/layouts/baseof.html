@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body class="m-0 w-screen">
+  <header class="flex justify-between items-center w-screen p-4 shadow">
+    {{ partial "header.html" . }}
+  </header>
+  <main class="prose lg:prose-xl mx-auto">
+    {{ block "main" . }}{{ end }}
+  </main>
+  <footer>
+    {{ partial "footer.html" . }}
+  </footer>
+</body>
+</html>

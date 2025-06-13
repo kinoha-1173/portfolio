@@ -1,0 +1,36 @@
+{{ define "main" }}
+<section id="projects" class="m-4">
+  <h3>Featured-Projects</h3>
+  <div class="grid md:grid-cols-2 gap-8">
+    {{ range first 4 (where .Site.RegularPages "Section" "projects") }}
+    <article class="px-4 border rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition">
+      <a href="{{ .RelPermalink }}" class="no-underline">
+        {{ with .Resources.GetMatch .Params.thumbnail }}
+          {{ $img := .Fill "400x200 center" }}
+          <img src="{{ $img.RelPermalink }}" alt="{{ $.Title }}" class="w-full h-48 object-cover">
+          {{ else }}
+          <div class="flex w-full text-white my-10 h-48 justify-center items-center bg-gray-400 rounded-lg">no-image</div>
+        {{ end }}
+        <div class="">
+          <h4 class="text-xl font-medium mb-2">{{ .Title }}</h4>
+          <p class="text-gray-600 text-sm line-clamp-3 h-16">{{ .Summary }}</p>
+        </div>
+      </a>
+    </article>
+    {{ end }}
+  </div>
+</section>
+<section id="blogs" class="m-4">
+  <h3>Blog</h3>
+  <ul class="not-prose list-none pl-0">
+    {{ range first 5 (where .Site.RegularPages "Section" "posts") }}
+    <li class="border-b px-4 py-2">
+      <a href="{{ .RelPermalink }}" class="flex justify-between no-underline hover:underline px-4">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006 / 01 / 02" }}</time>
+        {{ .Title }}
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+</section> 
+{{ end }}
