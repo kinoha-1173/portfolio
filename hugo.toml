@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://room-kinogmovr-portfolio.netlify.app/'
 languageCode = 'en-us'
 title = "キノベヤ~Kino's room~"
 theme = 'portfolio'
