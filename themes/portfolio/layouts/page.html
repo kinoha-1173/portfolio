@@ -4,7 +4,8 @@
       prose-h1:text-4xl prose-h1:font-bold
       prose-h2:text-2xl prose-h2:font-bold
       prose-h3:text-xl prose-h3:font-bold
-      prose-p:text-base prose-p:leading-relaxed prose-p:text-justify">
+      prose-p:text-base prose-p:leading-relaxed prose-p:text-justify
+      prose-li:text-lg">
       <div class="mb-4">
         <h1 class="">{{ .Title }}</h1>
         {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
@@ -15,5 +16,14 @@
       {{ .Content }}
       {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
     </article>
+    <aside class="md:col-span-1 sticky">
+      {{ if .TableOfContents }}
+      <nav class="bg-gray-50 p-4 rounded shadow-sm">
+        <h2 class="font-semibold mb-2 not-prose">目次</h2>
+        <div class="text-sm prose prose-sm
+        prose-li:list-none">{{ .TableOfContents }}</div>
+      </nav>
+      {{ end }}
+    </aside>
   </div>
 {{ end }}
