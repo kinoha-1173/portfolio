@@ -2,6 +2,7 @@ baseURL = 'https://room-kinogmovr-portfolio.netlify.app/'
 languageCode = 'en-us'
 title = "キノベヤ~Kino's room~"
 theme = 'portfolio'
+pygmentsCodeFences = true
 
 [build]
   publish = "public"
