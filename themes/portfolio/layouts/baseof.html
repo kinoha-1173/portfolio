@@ -3,11 +3,11 @@
 <head>
   {{ partial "head.html" . }}
 </head>
-<body class="m-0 w-screen">
+<body class="m-0 flex flex-col w-screen min-h-screen">
   <header class="flex justify-between items-center w-screen p-4 shadow">
     {{ partial "header.html" . }}
   </header>
-  <main class="prose lg:prose-xl mx-auto">
+  <main class="flex-grow prose lg:prose-xl mx-auto mb-4">
     {{ block "main" . }}{{ end }}
   </main>
   <footer class="m-0 w-screen bg-gray-400">
