@@ -1,0 +1,7 @@
+<ul class="space-y-2">
+  {{ range $name, $pages := .Site.Taxonomies.architect }}
+    <li>
+      {{ $name }}
+    </li>
+  {{ end }}
+</ul>

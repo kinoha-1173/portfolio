@@ -4,6 +4,9 @@ title = "キノベヤ~Kino's room~"
 theme = 'portfolio'
 pygmentsCodeFences = true
 
+[taxonomies]
+  architect = "architect"
+
 [build]
   publish = "public"
   [build.buildStats]

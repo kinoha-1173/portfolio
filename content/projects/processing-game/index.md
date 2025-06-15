@@ -4,6 +4,9 @@ draft = false
 title = 'Processingで通信ゲーム【縛りあり】'
 thumbnail = 'thumbnail.png'
 summary = 'Processing標準ライブラリ+Processing.netのみで通信ゲームを制作しました。Javaに慣れた中でのProcessingは縛りの塊でした。'
+architect = [
+    'Processing'
+]
 +++
 ## 制作内容
 ### 成果物
