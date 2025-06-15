@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <div class="max-w-5xl mx-auto px-4 py-12 md:grid md:grid-cols-3 md:gap-8">
+  <div class="w-min-2xl w-max-5xl mx-auto px-4 py-12 md:grid md:grid-cols-3 md:gap-8">
     <article class="md:col-span-2 prose lg:prose-xl
       prose-h1:text-4xl prose-h1:font-bold
       prose-h2:text-2xl prose-h2:font-bold
@@ -20,7 +20,7 @@
       {{ .Content }}
       {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
     </article>
-    <aside class="md:col-span-1 sticky">
+    <aside class="min-w-60 md:col-span-1 sticky">
       {{ if .TableOfContents }}
       <nav class="bg-gray-50 p-4 rounded shadow-sm">
         <h2 class="font-semibold mb-2 not-prose">目次</h2>
