@@ -1,6 +1,6 @@
 +++
 date = '2025-06-15T20:44:59+09:00'
-draft = true
+draft = false
 title = 'このサイトについて'
 +++
 ## Who am I?
