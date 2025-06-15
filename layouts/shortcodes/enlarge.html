@@ -1,0 +1,26 @@
+<!-- layouts/shortcodes/enlarge.html -->
+<div x-data="{ open: false }" class="inline-block">
+  <!-- サムネイル画像 -->
+  <img
+    src="{{ .Get "src" }}"
+    alt="{{ .Get "alt" }}"
+    @click="open = true"
+    class="cursor-pointer hover:opacity-90 transition"
+  />
+
+  <!-- モーダル -->
+  <template x-if="open">
+    <div
+      class="not-prose fixed inset-0 bg-gray-600/70 flex items-center justify-center z-50"
+      @click="open = false"
+    >
+        <div class="overflow-auto max-h-full">
+            <img
+                src="{{ .Get "src" }}"
+                alt="{{ .Get "alt" }}"
+                class="max-w-screen-lg rounded"
+            />
+        </div>
+    </div>
+  </template>
+</div>
