@@ -34,3 +34,4 @@ IT、ないしモノづくりの本質だと思っています。とりわけ、
 #### GitHub：https://github.com/kinoha-1173
 #### ご連絡先：ochikino.konoha@gmail.com  
 ご連絡は上記メールアドレス、もしくはTwitterのDMへどうぞ
+#### Qiita：https://qiita.com/kinoha
