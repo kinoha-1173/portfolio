@@ -3,6 +3,7 @@ date = '2025-06-15T09:47:46+09:00'
 draft = false
 title = '【Ruby on Rails】レンタカー利用予約システム'
 summary = '２年次後期の演習課題として、Ruby on Railsを利用したWebアプリを制作しました。設計はグループで、実装は各個人で行う形式。MVCモデル大好き。'
+thumbnail = 'thumbnail.png'
 +++
 ## 制作内容
 ### 成果物
